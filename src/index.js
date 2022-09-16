@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import profile2 from './image/pic2.jfif'
 
 const App = () =>{
     return(
         <div className="ui comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="profile picture"/>
+                    <img src={profile2} alt="profile picture"/>
                 </a>
                 <div className="content">
                     <a href="/" className="author">
