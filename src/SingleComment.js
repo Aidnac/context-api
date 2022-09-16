@@ -1,23 +1,23 @@
 import React from "react";
-import profile2 from './image/pic2.jfif'
 
-const SingleComment = () =>{
+
+const SingleComment = (props) =>{
     return (
 		<div className='comment'>
 			<a href="/" className='avatar'>
-				<img src={profile2} alt="profile" />
+				<img src={props.picture} alt="profile" />
 			</a>
 			<div className='content'>
 				<a href="/" className='author'>
-					Sarah
+					{props.name}
 				</a>
 				<div className='metadata'>
 					<span className='date'>
-						Today
+						{ props.date}
 					</span>
 				</div>
 				<div className='text'>
-					The comment
+					{props.text}
 				</div>
 			</div>
 		</div>
